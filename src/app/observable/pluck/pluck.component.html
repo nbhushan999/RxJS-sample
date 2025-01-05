@@ -1,0 +1,39 @@
+<div class="my-3">
+    <h1>Pluck</h1>
+    <p>Maps each source value to its specified nested property.(take any key from array of objects and pluck it) <strong class="text-danger">Deprecated</strong></p>
+    <br>
+
+    <div class="row">
+        <div class="col-md-5">
+           
+            <p class="border rounded py-2 px-3 bg-light">
+                <strong>Ex -01 </strong> by property
+              </p>
+              <hr />
+            <table>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                <tr *ngFor="let item of data">
+                    <td>{{item}}</td>
+                </tr>
+              </table> 
+        </div>
+        <br>
+        <div class="col-md-5">
+            <p class="border rounded py-2 px-3 bg-light">
+                <strong>Ex -02 (nested property)</strong>
+              </p>
+              <hr />
+              <table>
+                <tr>
+                    <th>Job > Experience</th>
+                </tr>
+                <tr *ngFor="let item of data1">
+                    <td>{{item}}</td>
+                </tr>
+              </table> 
+        </div>
+    </div>
+
+</div>

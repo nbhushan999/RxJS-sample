@@ -1,0 +1,33 @@
+<div class="my-3">
+    <h1>Custom Observable</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Ex -01 (Mannual)</strong>
+            <hr>
+            <ul class="techlist" id="elcontainer" [ngClass]="templateClass=='completed' ? 'completed' : templateClass=='error' ? 'error':'' "></ul>
+        </div>
+        <div class="col-md-6">
+            <strong>Ex -02 (Custom Interval observable)</strong>
+            <hr>
+            <ul class="techlist" id="elcontainer2" [ngClass]="templateClass2=='completed' ? 'completed' : templateClass2=='error' ? 'error':'' ">
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <strong>Ex -02 (Custom Interval observable)</strong>
+            <hr>
+            <p class="border rounded py-2 px-3 bg-light">
+                <strong>Random Names:</strong>
+                'Rahul','sukhvir','Sunny'
+              </p>
+        </div>
+        <p>{{name}}</p>
+        <span style="width: auto;" class="badge bg-success"
+        [ngClass]="templateClass3=='completed' ? 'bg-success' : templateClass3=='error' ? 'bg-danger':'bg-primary' ">{{templateClass3=='completed' ? 'success' : templateClass3=='error' ? 'error':'running'}} </span>
+
+    </div>
+</div>
