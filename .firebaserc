@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "practice-5b3c5": {
+      "hosting": {
+        "rxjs": [
+          "practice-5b3c5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "practice-5b3c5"
+  }
+}
